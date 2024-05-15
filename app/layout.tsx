@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { gt_walsheim_pro } from '@/app/ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${gt_walsheim_pro.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
